@@ -71,7 +71,7 @@ function sendMessage() {
     .then(data => {
         // 显示DeepSeek的回复
         appendMessage('deepseek', "<think>"+data.choices[0].message.reasoning_content+"</think>\n"+data.choices[0].message.content);
-        content[i]={"content": data.choices[0].message.content,"reasoning_content":data.choices[0].message.reasoning_content,"role": "assistant"};
+        content[i]={"content": data.choices[0].message.content,"role": "assistant"};
         i++;
     })
     .catch(error => {
