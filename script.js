@@ -46,7 +46,7 @@ function sendMessage() {
                   "role": "user"
                 }
               ]*/content,
-              "model": "deepseek-chat",
+              "model": "deepseek-reasoner",
               "frequency_penalty": 0,
               "max_tokens": 2048,
               "presence_penalty": 0,
